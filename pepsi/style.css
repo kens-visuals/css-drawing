@@ -13,4 +13,29 @@ body {
   border-radius: 50%;
   border: 10px solid white;
   position: relative;
+  overflow: hidden;
+}
+
+.pepsi:before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  border-radius: 25%;
+  background-color: #fff;
+  top: -160px;
+  left: -240px;
+  transform: rotate(-18deg);
+}
+
+.pepsi::after {
+  content: '';
+  position: absolute;
+  width: 550px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: #da473c;
+  top: -275px;
+  left: -290px;
+  transform: rotate(-18deg);
 }
