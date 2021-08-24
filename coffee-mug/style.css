@@ -1,0 +1,42 @@
+:root {
+  --dark-brown: #3f2616;
+  --light-brown: #442918;
+  --dark-yellow: #fe9407;
+  --light-yellow: #feaa3a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #2da4a8;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coffe-mug {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: var(--dark-brown);
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px var(--light-brown), 0 0 0 25px var(--dark-brown),
+    0 0 0 40px var(--dark-yellow), 0 0 0 65px var(--light-yellow),
+    0 120px 0 -25px var(--dark-brown), 100px 70px 0 -25px var(--dark-brown),
+    80px 140px 0 -10px var(--dark-brown), 0 210px 0 -55px var(--dark-brown),
+    20px 250px 0 -65px var(--dark-brown);
+}
+
+.coffe-mug::before {
+  content: '';
+  position: absolute;
+  top: -89px;
+  right: -75px;
+  width: 60px;
+  height: 75px;
+  transform: rotate(43deg);
+  background-color: var(--dark-yellow);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
