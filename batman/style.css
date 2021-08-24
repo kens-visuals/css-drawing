@@ -1,0 +1,122 @@
+:root {
+  --main-color: #fdff00;
+  --secondary-color: #111111;
+  --border-rad: 50%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(60deg, #303030, #111111);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oval {
+  width: 230px;
+  height: 130px;
+  border-radius: var(--border-rad);
+  background-color: var(--main-color);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 212px;
+  height: 112px;
+  background-color: var(--secondary-color);
+  border-radius: var(--border-rad);
+  position: relative;
+}
+
+.oval-mini {
+  width: 38px;
+  height: 70px;
+  position: absolute;
+  border-radius: var(--border-rad);
+  background-color: var(--main-color);
+  top: 73px;
+}
+
+.o1 {
+  left: 68px;
+  transform: rotate(-15deg);
+}
+
+.o1::before {
+  content: '';
+  width: 33px;
+  height: 70px;
+  position: absolute;
+  border-radius: var(--border-rad);
+  background-color: var(--main-color);
+  transform: rotate(-23deg);
+  bottom: 12px;
+  left: -24px;
+}
+
+.o2 {
+  right: 68px;
+  transform: rotate(15deg);
+}
+
+.o2::after {
+  content: '';
+  width: 33px;
+  height: 70px;
+  position: absolute;
+  border-radius: var(--border-rad);
+  background-color: var(--main-color);
+  transform: rotate(23deg);
+  bottom: 12px;
+  right: -24px;
+}
+
+.circle {
+  width: 37px;
+  height: 40px;
+  border-radius: var(--border-rad);
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+}
+
+.o3 {
+  left: 57px;
+}
+
+.o4 {
+  right: 57px;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+}
+
+.sq1 {
+  left: 74px;
+}
+
+.sq2 {
+  right: 74px;
+}
+
+.ears {
+  width: 12px;
+  position: absolute;
+  top: 0;
+  left: 94px;
+  border-bottom: 12px solid var(--main-color);
+  border-left: 6px solid var(--secondary-color);
+  border-right: 6px solid var(--secondary-color);
+  transform: rotate(180deg);
+}
