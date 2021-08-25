@@ -17,6 +17,7 @@ body {
   height: 110px;
   border-radius: 50%;
   background-color: var(--primary-color);
+  animation: rotate 2.2s ease-in-out infinite;
 }
 
 .center {
@@ -45,4 +46,18 @@ body {
 
 .bar:nth-child(3) {
   transform: translate(-50%, -50%) rotate(120deg);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(90deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
 }
