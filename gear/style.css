@@ -1,0 +1,48 @@
+:root {
+  --primary-color: #5dc59d;
+  --secondary-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gear {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.gear-inner {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+}
+
+.bar {
+  width: 170px;
+  height: 40px;
+  border-radius: 7px;
+  background-color: var(--primary-color);
+}
+
+.bar:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+
+.bar:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(120deg);
+}
