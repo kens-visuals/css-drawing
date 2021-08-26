@@ -10,6 +10,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: color 2.2s ease-in-out infinite;
 }
 
 .gear {
@@ -48,16 +49,33 @@ body {
   transform: translate(-50%, -50%) rotate(120deg);
 }
 
+@keyframes color {
+  0% {
+    background-color: var(--primary-color);
+  }
+
+  50% {
+    background-color: var(--secondary-color);
+  }
+
+  100% {
+    background-color: var(--primary-color);
+  }
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
+    background-color: var(--secondary-color);
   }
 
   50% {
     transform: rotate(90deg);
+    background-color: var(--primary-color);
   }
 
   100% {
     transform: rotate(180deg);
+    background-color: var(--secondary-color);
   }
 }
