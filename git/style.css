@@ -13,8 +13,9 @@ body {
   height: 150px;
   position: relative;
   border-radius: 15px;
-  transform: rotate(45deg);
   background-color: #f05033;
+  animation: rotate 1.5s ease-in 1s 1;
+  transform: rotate(0deg) rotate(45deg);
 }
 
 .line1 {
@@ -66,4 +67,14 @@ body {
   position: absolute;
   top: -9px;
   left: 65px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(45deg);
+  }
 }
