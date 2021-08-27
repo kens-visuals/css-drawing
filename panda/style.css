@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.panda {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border: 12px solid black;
+  border-radius: 50%;
+  position: relative;
+}
+
+.eye {
+  width: 115px;
+  height: 58px;
+  background-color: #000;
+  border-radius: 0 0 115px 115px;
+  position: absolute;
+  top: 45%;
+  overflow: hidden;
+  animation: eye 4s ease-in 0.2s 1;
+}
+
+.eye-left {
+  left: 10px;
+  transform: rotate(30deg);
+}
+
+.eye-right {
+  right: 10px;
+  transform: rotate(-30deg);
+}
+
+.ball {
+  width: 30px;
+  height: 30px;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -50%;
+}
+
+.left-ball {
+  left: 32%;
+  animation: left-ball 4s ease-in 1;
+}
+
+.right-ball {
+  right: 32%;
+  animation: right-ball 4s ease-in 1;
+}
+
+.nose {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mouth {
+  width: 80px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 10px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg);
+  animation: mouth 5s ease-out;
+}
+
+.ear {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  top: -30px;
+  z-index: -1;
+}
+
+.ear-left {
+  left: -35px;
+}
+
+.ear-right {
+  right: -35px;
+}
+
+@keyframes eye {
+  0% {
+    top: 30%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes left-ball {
+  0% {
+    top: 40%;
+    left: 32%;
+  }
+}
+
+@keyframes right-ball {
+  0% {
+    top: 40%;
+    right: 32%;
+  }
+}
+
+@keyframes mouth {
+  0% {
+    width: 120px;
+    transform: translateX(-50%) rotate(10deg);
+  }
+}

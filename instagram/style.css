@@ -22,7 +22,7 @@ body {
     #d6249f 60%,
     #285aeb 90%
   );
-  animation: gradient-loop 4s ease 1;
+  animation: gradient-loop 4s ease-out 1;
 }
 
 .square {
