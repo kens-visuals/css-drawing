@@ -19,9 +19,8 @@ body {
   width: 320px;
   height: 160px;
   background-color: var(--color-red);
-  border-right: 20px solid var(--color-green);
-  border-bottom: 20px solid var(--color-green);
-  border-left: 20px solid var(--color-green);
+  border: 20px solid var(--color-green);
+  border-top: 1px solid transparent;
   border-bottom-right-radius: 200px;
   border-bottom-left-radius: 200px;
   position: relative;
