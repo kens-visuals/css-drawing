@@ -35,7 +35,6 @@ body {
   border-right: 30px solid transparent;
   border-bottom: 30px solid var(--color-green);
   border-left: 30px solid var(--color-yellow);
-  animation: colors 5s ease-in 0.5s 1;
 }
 
 .half {
