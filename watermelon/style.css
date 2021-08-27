@@ -2,19 +2,66 @@
   --color-red: #fd6c64;
   --color-green: #5af5b6;
   --color-black: #262626;
+  --color-purple: #69506d;
 }
 
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-color: #69506d;
+  background-color: var(--color-purple);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .watermelon {
   width: 320px;
   height: 160px;
+  background-color: var(--color-red);
+  border-right: 20px solid var(--color-green);
+  border-bottom: 20px solid var(--color-green);
+  border-left: 20px solid var(--color-green);
+  border-bottom-right-radius: 200px;
+  border-bottom-left-radius: 200px;
+  position: relative;
+  animation: move 1s ease-in-out infinite alternate;
+}
+
+span {
+  width: 10px;
+  height: 10px;
+  border-radius: 0 50% 50% 50%;
+  background-color: var(--color-black);
+  transform: rotate(45deg);
+  display: inline-block;
+  margin: 20px;
+  animation: movedrops 1s ease-in-out infinite alternate-reverse;
+}
+
+span:nth-child(7),
+span:nth-child(12),
+span:nth-child(13),
+span:nth-child(14) {
+  opacity: 0;
+}
+
+@keyframes movedrops {
+  0% {
+    transform: rotate(45deg) rotate(-30deg);
+  }
+
+  100% {
+    transform: rotate(45deg) rotate(30deg);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(-20deg);
+  }
+
+  100% {
+    transform: rotate(20deg);
+  }
 }
