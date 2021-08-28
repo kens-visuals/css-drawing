@@ -32,24 +32,27 @@ body {
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
   background-color: var(--color-dark-red);
-  animation: reveal 2s ease-in-out alternate;
+  animation: reveal-left 2s ease-in-out alternate;
 }
 
 .part-2 {
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
   background-color: var(--color-light-red);
+  animation: reveal-right 2s ease-in-out alternate;
 }
 
 .part-3 {
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
   background-color: var(--color-purple);
+  animation: reveal-left 2s ease-in-out alternate;
 }
 
 .part-4 {
   border-radius: 50%;
   background-color: var(--color-blue);
+  animation: reveal-circle 2s ease-in-out alternate;
 }
 
 .part-5 {
@@ -57,14 +60,53 @@ body {
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
   background-color: var(--color-green);
+  animation: reveal-bottom 2s ease-in-out alternate;
 }
 
-@keyframes reveal {
+@keyframes reveal-left {
   0% {
-    width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   100% {
-    width: 90px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+}
+
+@keyframes reveal-right {
+  0% {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  100% {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+}
+
+@keyframes reveal-circle {
+  0% {
+    border-radius: 0;
+  }
+
+  100% {
+    border-radius: 50%;
+  }
+}
+
+@keyframes reveal-bottom {
+  0% {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  100% {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
   }
 }
