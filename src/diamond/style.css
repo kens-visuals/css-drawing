@@ -3,35 +3,49 @@
   --secondary-color: #1fb67c;
   --tertiary-color: #26c893;
   --accent-color: #55ddb9;
+  --background-color: #233637;
 }
 
-* {
-  box-sizing: border-box !important;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background: #233637;
   height: 100vh;
+  background: var(--background-color);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .diamond {
-  position: relative;
-  height: 200px;
   width: 200px;
+  height: 200px;
+  position: relative;
   transform: rotate(45deg);
 }
 
-span:nth-child(1) {
+span {
+  width: 0;
+  height: 0;
   position: absolute;
+  border-top: 50px solid var(--main-color);
+  border-left: 50px solid var(--secondary-color);
+  border-bottom: 50px solid var(--tertiary-color);
+  border-right: 50px solid var(--accent-color);
+}
+
+span:nth-child(1) {
   top: 0;
   left: 0;
-  height: 0;
-  width: 0;
   border-top: 50px solid transparent;
   border-left: 50px solid transparent;
   border-bottom: 50px solid var(--tertiary-color);
@@ -39,37 +53,16 @@ span:nth-child(1) {
 }
 
 span:nth-child(2) {
-  position: absolute;
   top: 0;
   left: 50%;
-  height: 0;
-  width: 0;
-  border-top: 50px solid var(--main-color);
-  border-left: 50px solid var(--secondary-color);
-  border-bottom: 50px solid var(--tertiary-color);
-  border-right: 50px solid var(--accent-color);
 }
 
 span:nth-child(3) {
-  position: absolute;
   top: 50%;
   left: 0;
-  height: 0;
-  width: 0;
-  border-top: 50px solid var(--main-color);
-  border-left: 50px solid var(--secondary-color);
-  border-bottom: 50px solid var(--tertiary-color);
-  border-right: 50px solid var(--accent-color);
 }
 
 span:nth-child(4) {
-  position: absolute;
   top: 50%;
   left: 50%;
-  height: 0;
-  width: 0;
-  border-top: 50px solid var(--main-color);
-  border-left: 50px solid var(--secondary-color);
-  border-bottom: 50px solid var(--tertiary-color);
-  border-right: 50px solid var(--accent-color);
 }
