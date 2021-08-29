@@ -1,13 +1,14 @@
 :root {
   --main-color: #fdff00;
   --secondary-color: #111111;
+  --background-color: #303030;
   --border-rad: 50%;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(60deg, #303030, #111111);
+  background-color: var(--background-color);
   height: 100vh;
   display: flex;
   justify-content: center;
