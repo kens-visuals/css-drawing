@@ -19,6 +19,7 @@ This repo is a simple and fun project of drawings coded only in CSS. I've always
 
 - ## Other
   - [Beaver](https://codepen.io/kens-visuals/full/YzQybXm)
+  - [Book Shelf](https://codepen.io/kens-visuals/full/jOwbgoy)
   - [Captain America's Shield](https://codepen.io/kens-visuals/full/WNOvdvQ)
   - [Coffee Mug](https://codepen.io/kens-visuals/full/abwOLrd)
   - [Diamond](https://codepen.io/kens-visuals/full/YzQPygg)
