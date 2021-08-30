@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book Shelf</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  </head>
+
+  <body>
+    <div class="shelf">
+      <div class="clock">
+        <div class="hand hour-hand"></div>
+        <div class="hand min-hand"></div>
+        <div class="hand second-hand"></div>
+        <div class="knot"></div>
+
+        <div class="clock-ear clock-ear--left"></div>
+        <div class="clock-ear clock-ear--right"></div>
+
+        <div class="clock-foot clock-foot--left"></div>
+        <div class="clock-foot clock-foot--right"></div>
+      </div>
+
+      <div class="book-1"></div>
+      <div class="book-2"></div>
+      <div class="book-3"></div>
+    </div>
+
+    <script>
+      const secondHand = document.querySelector('.second-hand');
+      const minHand = document.querySelector('.min-hand');
+      const hoursHand = document.querySelector('.hour-hand');
+
+      function setDate() {
+        const DEGREE = 90;
+        const now = new Date();
+
+        const secondsDegrees = (now.getSeconds() / 60) * 360 + DEGREE;
+        secondHand.style.cssText = `transform: rotate(${secondsDegrees}deg);`;
+
+        const minsDegrees = (now.getMinutes() / 60) * 360 + DEGREE;
+        minHand.style.cssText = `transform: rotate(${minsDegrees}deg);`;
+
+        const hoursDegrees = (now.getHours() / 12) * 360 + DEGREE;
+        hoursHand.style.cssText = `transform: rotate(${hoursDegrees}deg);`;
+      }
+
+      setInterval(setDate, 1000);
+    </script>
+  </body>
+</html>
