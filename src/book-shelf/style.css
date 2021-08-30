@@ -143,3 +143,109 @@ body {
   right: 20px;
   transform: rotate(-30deg);
 }
+
+.book-1 {
+  width: 30px;
+  height: 150px;
+  background-color: var(--color-orange);
+  border-radius: 5% 5% 0 0;
+  position: absolute;
+  left: 42%;
+  bottom: 20px;
+}
+
+.book-1::before {
+  content: 'HTML';
+  text-align: center;
+  font-family: monospace;
+  padding-top: 7px;
+  font-size: 11px;
+  color: var(--color-red);
+  width: 30px;
+  height: 20px;
+  background-color: var(--color-creme);
+  border-radius: 5% 5% 0 0;
+  position: absolute;
+  top: 20px;
+}
+
+.book-1::after {
+  content: '';
+  width: 50%;
+  height: 100%;
+  background-color: var(--color-black);
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.book-2 {
+  width: 40px;
+  height: 160px;
+  background-color: var(--color-red);
+  border-radius: 5% 5% 0 0;
+  position: absolute;
+  left: 49%;
+  bottom: 20px;
+}
+
+.book-2::before {
+  content: 'JS';
+  text-align: center;
+  font-family: monospace;
+  padding-top: 4px;
+  color: var(--color-brown-light);
+  width: 40px;
+  height: 20px;
+  background-color: var(--color-creme);
+  border-radius: 5% 5% 0 0;
+  position: absolute;
+  top: 20px;
+}
+
+.book-2::after {
+  content: '';
+  width: 60%;
+  height: 100%;
+  background-color: var(--color-black);
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.book-3 {
+  width: 50px;
+  height: 140px;
+  background-color: var(--color-green);
+  border-radius: 5% 5% 0 0;
+  position: absolute;
+  left: 58%;
+  bottom: 20px;
+}
+
+.book-3::before {
+  content: 'CSS';
+  text-align: center;
+  font-family: monospace;
+  padding-top: 4px;
+  color: var(--color-oranges);
+  width: 50px;
+  height: 20px;
+  background-color: var(--color-creme);
+  border-radius: 5% 5% 0 0;
+  position: absolute;
+  top: 20px;
+}
+
+.book-3::after {
+  content: '';
+  width: 70%;
+  height: 100%;
+  background-color: var(--color-black);
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
