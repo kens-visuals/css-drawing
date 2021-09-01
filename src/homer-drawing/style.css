@@ -1,0 +1,125 @@
+:root {
+  --color-black: #000000;
+  --color-creme: #d1b271;
+  --color-yellow: #fed90f;
+  --color-background: #de433f;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: var(--color-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.head {
+  width: 215px;
+  height: 405px;
+  position: relative;
+  background-color: green;
+}
+
+.forehead {
+  width: 170px;
+  height: 200px;
+  background-color: var(--color-yellow);
+  border: 1px solid var(--color-black);
+  border-radius: 60%/50%;
+  transform: rotate(-18deg);
+  position: absolute;
+  top: 10px;
+}
+
+.hair {
+  width: 80px;
+  height: 70px;
+  border-top: 2px solid var(--color-black);
+  transform: rotate(-40deg);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.hair1 {
+  top: 15px;
+}
+
+.hair2 {
+  left: 10px;
+}
+
+.eye {
+  width: 75px;
+  height: 75px;
+  background-color: #fff;
+  border: 1px solid var(--color-black);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.R-eye {
+  top: 110px;
+  left: 120px;
+}
+
+.L-eye {
+  top: 115px;
+  left: 60px;
+}
+
+.pupil {
+  width: 9px;
+  height: 9px;
+  background-color: var(--color-black);
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+}
+
+.pupil-right {
+  left: 30px;
+}
+
+.pupil-left {
+  left: 25px;
+}
+
+.f-side1 {
+  width: 140px;
+  height: 60px;
+  background-color: var(--color-yellow);
+  position: absolute;
+  top: 185px;
+  left: 30px;
+}
+
+.f-side2 {
+  width: 40px;
+  height: 60px;
+  background-color: var(--color-yellow);
+  transform: rotate(-11deg);
+  border-left: 1px solid var(--color-black);
+  position: absolute;
+  top: 165px;
+  left: 22px;
+}
+
+.nose {
+  width: 60px;
+  height: 32px;
+  background-color: var(--color-yellow);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px solid var(--color-black);
+  border-left: 1px solid transparent;
+  position: absolute;
+  top: 175px;
+  left: 130px;
+}
