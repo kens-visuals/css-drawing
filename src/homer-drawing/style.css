@@ -217,10 +217,10 @@ body {
 
 .collar-right {
   width: 20px;
-  height: 50px;
+  height: 60px;
   background-color: var(--color-white);
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   left: 150px;
   transform: rotate(-20deg);
   border-radius: 10%;
